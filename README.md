@@ -32,3 +32,30 @@ Checks whether the stack is empty.
 5️⃣ isFull (Array Implementation)
 
 Checks whether the stack is full.
+
+🏗️ Implementation Methods
+
+Stack can be implemented using:
+
+✅ Array
+
+✅ Linked List
+
+📊 Time Complexity
+Operation	Time Complexity
+Push	O(1)
+Pop	O(1)
+Peek	O(1)
+🚀 Applications of Stack
+
+Function call management (Call Stack)
+
+Expression evaluation
+
+Parenthesis checking
+
+Undo/Redo feature
+
+Depth First Search (DFS)
+
+Browser navigation
