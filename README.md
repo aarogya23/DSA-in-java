@@ -59,3 +59,24 @@ Undo/Redo feature
 Depth First Search (DFS)
 
 Browser navigation
+
+📖 Example
+
+If we push elements:
+
+Push(10)
+Push(20)
+Push(30)
+
+
+Stack becomes:
+
+30  ← Top
+20
+10
+
+
+After Pop():
+
+20  ← Top
+10
