@@ -109,3 +109,17 @@ Dequeue	Remove element from front
 Peek/Front	See first element
 isEmpty	Check if queue is empty
 isFull	Check if queue is full (array queue)
+
+1️⃣ Simple (Linear) Queue
+
+👉 Works in FIFO order
+
+Insert at rear
+
+Delete from front
+
+Implemented using array or linked list
+
+❌ Problem:
+
+In array implementation, once rear reaches end, unused space at front can't be reused → wastage of memory
