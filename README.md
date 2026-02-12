@@ -137,3 +137,26 @@ front = (front + 1) % size
 
 ✔ Efficient memory use
 ✔ No wastage
+
+
+3️⃣ Priority Queue
+4
+👉 Elements are removed based on priority
+
+Not purely FIFO
+
+Higher priority removed first
+
+Types:
+
+Min Priority Queue
+
+Max Priority Queue
+
+Usually implemented using:
+
+Heap
+
+Array
+
+Linked List
