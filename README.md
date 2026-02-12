@@ -80,3 +80,32 @@ After Pop():
 
 20  ← Top
 10
+
+What is a Queue?
+
+A Queue is a linear data structure that follows:
+
+FIFO (First In, First Out)
+The first element inserted is the first one removed.
+
+📌 Real-life example:
+
+Line at a ticket counter
+
+Printer queue
+
+Call center waiting system
+
+🧠 Basic Terminology
+
+Front → First element (removed from here)
+
+Rear → Last element (inserted here)
+
+⚙️ Basic Operations
+Operation	Meaning
+Enqueue	Insert element at rear
+Dequeue	Remove element from front
+Peek/Front	See first element
+isEmpty	Check if queue is empty
+isFull	Check if queue is full (array queue)
