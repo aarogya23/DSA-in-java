@@ -123,3 +123,17 @@ Implemented using array or linked list
 ❌ Problem:
 
 In array implementation, once rear reaches end, unused space at front can't be reused → wastage of memory
+
+2️⃣ Circular Queue
+👉 Solves memory wastage problem
+
+Last position connects back to first
+
+Uses modulo operation
+
+rear = (rear + 1) % size
+front = (front + 1) % size
+
+
+✔ Efficient memory use
+✔ No wastage
