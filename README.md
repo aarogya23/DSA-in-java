@@ -112,51 +112,92 @@ isFull	Check if queue is full (array queue)
 
 1️⃣ Simple (Linear) Queue
 
-👉 Works in FIFO order
+Here you go bro 🔥
+You can **directly copy-paste this into your `README.md`** 👇
 
-Insert at rear
+---
 
-Delete from front
+# 📌 Linear Queue Implementation in Java
 
-Implemented using array or linked list
+## 📖 Overview
 
-❌ Problem:
+This project implements a **Linear Queue** using a normal array in Java.
+The queue follows the **FIFO (First In, First Out)** principle.
 
-In array implementation, once rear reaches end, unused space at front can't be reused → wastage of memory
+---
 
-2️⃣ Circular Queue
-👉 Solves memory wastage problem
+## 🚀 Features
 
-Last position connects back to first
+* Enqueue (Insert element)
+* Dequeue (Remove element)
+* Peek (View front element without removing)
+* Display (Show all queue elements)
+* Overflow handling
+* Underflow handling
 
-Uses modulo operation
+---
 
-rear = (rear + 1) % size
-front = (front + 1) % size
+## 🧠 Concepts Used
 
+* Array Data Structure
+* FIFO Principle
+* Front and Rear pointer management
 
-✔ Efficient memory use
-✔ No wastage
+---
 
+## 🛠️ Technologies
 
-3️⃣ Priority Queue
-4
-👉 Elements are removed based on priority
+* Java
 
-Not purely FIFO
+---
 
-Higher priority removed first
+## 📂 Project Structure
 
-Types:
+```
+QueueImplementation/
+└── LinearQueue.java
+```
 
-Min Priority Queue
+---
 
-Max Priority Queue
+## ▶️ How to Run
 
-Usually implemented using:
+1. Open the project in any Java IDE (Eclipse / IntelliJ / VS Code)
+2. Run the `LinearQueue.java` file
+3. View the output in the console
 
-Heap
+---
 
-Array
+## 📌 Sample Output
 
-Linked List
+```
+10 inserted into the queue
+20 inserted into the queue
+30 inserted into the queue
+10 deleted from the queue
+Queue elements: 20 30
+Front element is: 20
+```
+
+---
+
+## ⚠️ Limitations
+
+* Fixed size queue
+* Cannot reuse deleted space (Linear Queue limitation)
+
+---
+
+## 📈 Future Improvements
+
+* Circular Queue implementation
+* Queue using Linked List
+* Menu-driven program
+
+---
+
+👨‍💻 Developed as part of DSA practice.
+
+---
+
+If you want a **shorter professional version for GitHub**, tell me bro 🔥
