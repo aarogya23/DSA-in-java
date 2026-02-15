@@ -196,8 +196,81 @@ Front element is: 20
 
 ---
 
-👨‍💻 Developed as part of DSA practice.
+Circular Queue
+Definition
 
----
+A Circular Queue connects the last position back to the first position to form a circle.
 
-If you want a **shorter professional version for GitHub**, tell me bro 🔥
+Structure
+      [10] [20]
+     /        \
+   [50]      [30]
+     \        /
+      [40]
+
+After reaching the end, the queue wraps around.
+
+Formula used:
+
+rear = (rear + 1) % size
+front = (front + 1) % size
+Advantages
+
+Efficient memory utilization
+
+No memory wastage
+
+Reuses empty spaces
+
+Disadvantages
+
+Slightly complex implementation
+
+🔄 Comparison Table
+Feature	Linear Queue	Circular Queue
+Structure	Linear	Circular
+Memory Utilization	Inefficient	Efficient
+Space Reuse	Not possible	Possible
+Overflow Condition	rear == size - 1	front == (rear + 1) % size
+Implementation	Simple	Moderate
+Performance	Less efficient	More efficient
+⚙️ Time Complexity
+Operation	Time Complexity
+Enqueue	O(1)
+Dequeue	O(1)
+Display	O(n)
+
+Same for both, but Circular Queue uses memory efficiently.
+
+🧠 Real-life Applications
+Linear Queue
+
+Printer queue
+
+Ticket booking system
+
+Circular Queue
+
+CPU scheduling
+
+Circular buffers
+
+Multiplayer games turn system
+
+💻 Java Implementation Files
+
+LinearQueue.java
+
+CircularQueue.java
+
+📊 Conclusion
+
+Circular Queue is better than Linear Queue because:
+
+It avoids memory wastage
+
+It improves efficiency
+
+It reuses empty space
+
+Circular Queue is preferred in most real-world applications.
