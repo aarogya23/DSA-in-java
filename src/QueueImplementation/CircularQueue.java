@@ -57,6 +57,17 @@ public class CircularQueue {
 		
 		
 	}
+
+	    // Peek operation (see front element)
+    void peek() {
+
+        if (front == -1) {
+            System.out.println("Queue is empty");
+            return;
+        }
+
+        System.out.println("Front element is: " + queue[front]);
+    }
 	
 	public static void main(String[] args) {
 		
