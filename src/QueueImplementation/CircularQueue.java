@@ -68,6 +68,28 @@ public class CircularQueue {
 
         System.out.println("Front element is: " + queue[front]);
     }
+
+	void display() {
+
+    if (front == -1) {
+        System.out.println("Queue is empty");
+        return;
+    }
+
+    System.out.print("Queue elements: ");
+
+    for (int i = front; ; i = (i + 1) % Max) {
+
+        System.out.print(queue[i] + " ");
+
+        if (i == rear) {
+            break;
+        }
+    }
+
+    System.out.println();
+}
+
 	
 	public static void main(String[] args) {
 		
