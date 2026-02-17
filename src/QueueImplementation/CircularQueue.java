@@ -57,39 +57,65 @@ public class CircularQueue {
 		
 		
 	}
-
-	    // Peek operation (see front element)
-    void peek() {
-
-        if (front == -1) {
-            System.out.println("Queue is empty");
-            return;
-        }
-
-        System.out.println("Front element is: " + queue[front]);
-    }
-
-	void display() {
-
-    if (front == -1) {
-        System.out.println("Queue is empty");
-        return;
-    }
-
-    System.out.print("Queue elements: ");
-
-    for (int i = front; ; i = (i + 1) % Max) {
-
-        System.out.print(queue[i] + " ");
-
-        if (i == rear) {
-            break;
-        }
-    }
-
-    System.out.println();
-}
-
+	
+	//implementation of peek operation
+	void peek() {
+		if(front == -1) {
+			System.out.println("Queue is empty");
+		}
+		else {
+			System.out.println("Front elements is  " + queue[front]);
+		}
+	}
+	
+	//Now diaplaying the array i.e. circular queue elements
+	void display(){
+		if(front == -1) {
+			
+			System.out.println("Queue is empty");
+			
+			return;
+		}
+		
+		System.out.println("Queue elements: ");
+		
+		//using while loop
+		
+		int i = front;
+		
+		while(true) {
+			System.out.println(queue[i] + " ");
+			
+			if(i == rear)
+				break;
+			i = (i + 1) % Max;
+		}
+		
+		System.out.println();
+		
+	}
+	
+	//similarly using for loop
+		void displayusingfor() {
+	if(front == -1) {
+				
+				System.out.println("Queue is empty");
+				
+				return;
+			}
+			
+			System.out.println("Queue elements: ");
+			
+			//using while loop
+			int count = (rear + Max - front) % Max + 1;
+			
+			for(int i = 0; i < count; i++) {
+				System.out.println(queue[(front + i) % Max] + " ");
+			}
+			
+			System.out.println();
+			
+		}
 	
 	public static void main(String[] args) {
 		
@@ -106,6 +132,8 @@ public class CircularQueue {
 		c1.dequeue();
 		c1.dequeue();
 		
+		c1.display();
+		c1.peek();
 		
 	}
 
