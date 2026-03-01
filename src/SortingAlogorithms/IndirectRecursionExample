@@ -1,0 +1,22 @@
+public class IndirectRecursionExample {
+
+    static boolean isEven(int n) {
+        if (n == 0)
+            return true;
+        else
+            return isOdd(n - 1);   // Calls another function
+    }
+
+    static boolean isOdd(int n) {
+        if (n == 0)
+            return false;
+        else
+            return isEven(n - 1);  // Calls first function
+    }
+
+    public static void main(String[] args) {
+        
+        
+        System.out.println("Is 7 Odd? " + isOdd(7));
+    }
+}
