@@ -30,6 +30,17 @@ public class TailRecursion {
 		return fibonacci(n - 1, b, a+b);
 	}
 	
+	int sum(int n, int acc) {
+        if (n == 0) 
+        	
+        	{
+        	
+        	return acc; 
+        	// base case: return final accumulated sum
+        	}
+        return sum(n - 1, acc + n);        // tail call: add n to acc BEFORE calling
+    }
+	
 	public static void main(String[] args) {
 		
 		TailRecursion t1 = new TailRecursion();
